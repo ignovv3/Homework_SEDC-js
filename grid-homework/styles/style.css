@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+:root{
+    --color-yellow: #ffeaa7;
+    --color-blue: #74b9ff;
+    --color-purple: #a29bfe;
+    --color-green: #00cec9;
+    --color-reed: #fab1a0;
+    --color-white: #dfe6e9;
+}
+
+
+html{
+    font-size: 62.5%;
+    background-color: var(--color-yellow);
+}
+
+
+main{
+    font-size: 2.2rem;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 180px);
+    gap: 2rem;
+}
+
+.section1{
+    padding: 1rem;
+    padding-top: 4rem;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    border-radius: 4%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.section2{
+    padding: 1rem;
+    padding-top: 4rem;
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    border-radius: 3%;
+    grid-column: 2 / 6;
+    grid-row: 2 / 3;
+}
+
+.section3{
+    padding: 1rem;
+    background-color: var(--color-green);
+    border-radius: 3%;
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+}
+
+.section4{
+    padding: 1rem;
+    background-color: var(--color-green);
+    border-radius: 3%;
+    grid-column: 2/3 ;
+    grid-row: 3/6 ;
+}
+
+.section5{
+    padding: 1rem;
+    background-color: var(--color-reed);
+    border-radius: 3%;
+    grid-column: 3/5;
+    grid-row: 3/6;
+}
+
+.section6{
+    padding: 1rem;
+    background-color: var(--color-white);
+    border-radius: 3%;
+    grid-column: 5/6;
+    grid-row: 4/6;
+}
+

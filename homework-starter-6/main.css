@@ -1,0 +1,114 @@
+/* 
+- Import two fonts from google fonts. One should be a display font, one should be for the text.
+- Define 4 colors (--black, --white, --primary, --accent) in variables
+- Define the two font-families in variables (--font-display, --font-text)
+- Use font-display for all headings. Use font-text for everything else
+- Define separate font-sizes for all headings h1 to h4 (h1 should be larger than h2, etc)
+- Add font color to the nav links for all states. (regular a, :hover, :active) (use the variables)
+- Remove the list style from the navigation ul list
+- All elements with the class .card should have the primary color as background-color, and accent color as font color
+- All paragraphs in the .primary-articles should have italic text (do NOT edit the HTML to achieve this :D )
+- All paragraphs in the .secondary-articles should have a font-weight of 700 (same here, do not edit the HTML)
+- Bonus: Add styling to the contact section and form
+*/
+
+/* Note: Keep the homework task comment above when sending the homework. It helps with checking your homework. You can even use the comments
+to specify where a solution for a task is located in the document. You can delete this note. :D
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+:root {
+    --color-black: #000000;
+    --color-white: #ecf0f1;
+    --color-primary: #2c3e50;
+    --color-accent: #e74c3c;
+    --font-display: 'BhuTuka Expanded One', cursive;
+    --font-text: 'Roboto Condensed', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+}
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+h4 {
+    font-size: 2.2rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: var(--font-text);
+}
+
+a {
+    font-size: 2rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+a:hover {
+    color: var(--color-black);
+}
+
+a:active {
+    color: var(--color-primary);
+}
+
+.card {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+
+.card p {
+    font-size: 1.2rem;
+}
+
+.primary-card p {
+    font-style: italic;
+}
+
+.secondary-card p{
+    font-weight: 700;
+}
+
+.contact{
+    font-size: 7rem;
+    
+}

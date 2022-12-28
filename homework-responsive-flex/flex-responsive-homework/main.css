@@ -1,0 +1,128 @@
+/* 
+- Make the header a flexbox container
+- Set the flex direction in the header so that the header-brand is on the right side
+- Make the navigation horizontal with flexbox
+- Use flexbox to position the <aside> on the right side, and the .hero-page section on the left
+- Add flexbox on the .hero-page section so the articles position next to each other
+- The header nav should not be seen on a mobile device
+- On mobile device the articles in the hero section should flow vertically
+- The footer should only be visible on mobile devices
+- Bonus: Add a background-image on the .hero-page section (hint: Use something from pexels or unsplash)
+(Do a bit of research to see how exactly this works, it can be tricky :D)
+- Bonus 2: Add other styles to the homework
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3.4rem;
+    position: absolute;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+
+h4 {
+    font-size: 2.4rem;
+}
+
+
+h5 {
+    font-size: 2.2rem;
+}
+
+
+h6 {
+    font-size: 2rem;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 145rem;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.header-nav li {
+    padding: 1rem;
+}
+
+.header-nav li:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+main {
+    display: flex;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+aside {
+    padding-right: 2rem;
+    border-right: 1px solid black;
+    border-radius: 8px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li {
+    padding: 1rem;
+}
+
+aside li:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.hero-page {
+    padding-left: 2rem;
+}
+
+.hero-page h1 {
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+
+}
+
+.hero-page h2 {
+    padding-bottom: 1rem;
+}
+
+.hero-page p {
+    padding-bottom: 1rem;
+}
+
+
+.hero-page{
+    
+}

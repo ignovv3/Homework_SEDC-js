@@ -1,0 +1,135 @@
+/* 
+- Make the header a flexbox container
+- Set the flex direction in the header so that the header-brand is on the right side
+- Make the navigation horizontal with flexbox
+- Use flexbox to position the <aside> on the right side, and the .hero-page section on the left
+- Add flexbox on the .hero-page section so the articles position next to each other
+- The header nav should not be seen on a mobile device
+- On mobile device the articles in the hero section should flow vertically
+- The footer should only be visible on mobile devices
+- Bonus: Add a background-image on the .hero-page section (hint: Use something from pexels or unsplash)
+(Do a bit of research to see how exactly this works, it can be tricky :D)
+- Bonus 2: Add other styles to the homework
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-dark: #2c3e50;
+  --color-light: #7f8c8d;
+  --color-black: #1e1e1e;
+  --color-white: #ecf0f1;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  font-size: 2rem;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+.header-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.header-nav ul :hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.4rem;
+  padding-bottom: 5rem;
+}
+
+aside ul {
+  font-size: 2rem;
+  list-style: none;
+}
+
+aside li:hover {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+aside {
+  border-left: 1px solid var(--color-white);
+  border-radius: 8%;
+  padding-top: 1rem;
+}
+
+.hero-page h1 {
+  position: absolute;
+  padding-left: 80rem;
+  font-size: 3.4rem;
+  padding-bottom: 10rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--color-white);
+  border-radius: 4px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-top: 5rem;
+}
+
+article {
+  align-items: center;
+}
+
+footer {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-page h1 {
+    padding-left: 0;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .card {
+    border: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  footer {
+    display: initial;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+  }
+
+  footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border-top: 1px solid var(--color-white);
+    border-radius: 8%;
+  }
+
+  footer li:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+  }
+}

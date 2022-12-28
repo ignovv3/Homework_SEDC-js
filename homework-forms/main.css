@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-silver: #ecf0f1;
+    --color-red: #EA2027;
+    --color-blue: #2c3e50;
+    --color-black: #000000;
+    --color-darksilver: #2f3542;
+}
+
+.logo img {
+    width: 20%;
+}
+
+.logo {
+    background-color: var(--color-silver);
+    display: flex;
+    font-size: 2rem;
+    gap: 58%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar {
+    background-color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+.navbar a {
+    color: var(--color-silver);
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--color-black);
+}
+
+#img {
+    width: 3%;
+}
+
+.mostPopular a{
+    text-decoration: none;
+    color: var(--color-silver);
+    font-size: 2rem;
+}
+
+.mostPopular {
+    padding: 1%;
+}
+
+.section1 {
+    display: flex;
+    color: var(--color-silver);
+    padding-left: 2%;
+}
+
+
+.section1 img {
+    width: 30rem;
+}
+
+.heading2 {
+    color: var(--color-silver);
+    font-size: 2rem;
+    padding: 1%;
+}
+
+.heading2 a{
+    text-decoration: none;
+    color: var(--color-silver);
+}
+
+.section2 {
+    display: flex;
+    color: var(--color-silver);
+    padding-left: 2%;
+
+}
+
+.section2 img {
+    width: 30rem;
+}
+
+.heading3 {
+    color: var(--color-silver);
+    font-size: 2rem;
+    padding: 1%;
+}
+
+.heading3 a{
+    text-decoration: none;
+    color: var(--color-silver);
+}
+
+.section3 img {
+    width: 30rem;
+}
+
+.section3 {
+    display: flex;
+    color: var(--color-silver);
+    padding-left: 2%;
+
+}
+
+
+.section4 img {
+    width: 55rem;
+}
+
+.section4 {
+    padding: 1%;
+    display: flex;
+    gap: 3%;
+    padding-left: 2%;
+}
+
+.navbar2{
+    display: inline;
+}
+
+.navbar2 a {
+    text-decoration: none;
+    color: var(--color-silver);
+    background-color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+}
+
+
+footer {
+    background-color: var(--color-black);
+    padding: 0.5%;
+    display: flex;
+    gap: 29%;
+}
+
+footer img {
+    width: 3%;
+}
+
+footer p {
+    color: var(--color-silver);
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+.back-to-top{
+    position: fixed;
+    right: 100rem;
+    bottom: 1rem;
+    background-color: var(--color-black);
+    width: 5rem;
+    border-radius: 30%;
+}
+
+.back-to-top a{
+    color: var(--color-silver);
+    text-decoration: none;
+}

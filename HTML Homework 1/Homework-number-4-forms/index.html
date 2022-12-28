@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-Forms</title>
+</head>
+
+<body>
+    <header>
+        <h1>This is exercise for forms</h1>
+    </header>
+    <hr>
+    <hr>
+    <main>
+        <form action="" method="">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+
+            <label for="username">Password:</label>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <label for="comments">What did you think of this?</label>
+            <br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </form>
+
+        <form action="" method="">
+            <p>Please select you favourite genre:</p>
+
+            <input type="radio" name="genre" value="rock">
+            <label for="rock">Rock</label>
+            <input type="radio" name="genre" value="pop">
+            <label for="pop">Pop</label>
+            <input type="radio" name="genre" value="Jazz">
+            <label for="jazz">Jazz</label>
+            <input type="radio" name="genre" value="drill">
+            <label for="drill">Drill</label>
+        </form>
+
+        <form action="" method="">
+            <p>Please select your favourite music service(s):</p>
+
+            <input type="checkbox" name="service" value="itunes" checked id="itunes">
+            <label for="itunes">ITunes</label>
+            <input type="checkbox" name="service" id="lastfm">
+            <label for="lastfm">Last.fm</label>
+            <input type="checkbox" name="service" id="spotify" value="spotify">
+            <label for="spotify">Spotify</label>
+        </form>
+
+        <form action="" method="">
+            <label for="devices">What devices do you listen to music on?</label>
+            <select name="devices" id="devices">
+                <option value="" selected disabled></option>
+                <option value="ipod">Ipod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+            </select>
+        </form>
+        <hr>
+        <hr>
+        <form action="" method="">
+            <label for="instruments">Do you play any of the following instrument?</label>
+            <br>
+            <select name="instruments" id="instruments" size="3" multiple>
+                <option value="" selected disabled></option>
+                <option value="guitar">Guitar</option>
+                <option value="drums">Drums</option>
+                <option value="keyboard">Keyboard</option>
+                <option value="bass">Bass</option>
+            </select>
+        </form>
+
+        <form action="" method>
+            <label for="user-song">Upload your song in MP3 format:</label>
+            <input type="file" name="user-song" id="user-song">
+        </form>
+
+        <form action="" method="">
+            <label for="email">Subscribe to our email list:</label>
+            <input type="text" name="email" id="email">
+            <input type="submit" value="Subscribe">
+            <input type="reset" value="Reset form">
+        </form>
+
+        <form action="" method="">
+            <button>Click Here</button>
+            <input type="hidden" name="product-code" value="P1234">
+        </form>
+        <hr>
+        <hr>
+        <fieldset>
+            <legend>Contact details</legend>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <label for="mobile">Mobile phone number:</label>
+            <input type="text" name="mobile" id="mobile">
+            <label for="telephone">Telephone number:</label>
+            <input type="text" name="telephone" id="telephone">
+        </fieldset>
+        <section>
+            <article>
+                <h2>Japanese Vegeterian</h2>
+                <h3>Five week course in London</h3>
+                <p>A five week introduction to traditional Japanese vegeterian meals, teaching you a selection of rice
+                    and noodle dishes.</p>
+            </article>
+            <article>
+                <h2>Sauces Masterclass</h2>
+                <h3>One day workshop</h3>
+                <p>An intensive one-day course looking at you at how to create the most delicious sauces for use in a
+                    range of Japanese cookery</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Popular recipes</h2>
+            <a href="">Yakitori (grilled chicken)</a>
+            <a href="">Tsukune (minced chicken patties)</a>
+            <a href="">Okonomiyaki (savory pancakes)</a>
+            <a href="">Mizutaki (chicken stew)</a>
+        </aside>
+    </main>
+
+    <footer>
+        <p>2020 SEDC. All rights reserved</p>
+    </footer>
+</body>
+
+</html>

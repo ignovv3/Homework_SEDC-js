@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+p,
+div {
+  font-size: 2rem;
+  width: 50%;
+}
+
+:root {
+  --color-black: #2d3436;
+  --color-white: #f5f5f5;
+  --color-primary: #6c5ce7;
+  --color-accent: #fdcb6e;
+  --color-danger: #d63031;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+/* What the code below does is, it selects the first div that is a direct child of the .c1 (or .c2) container. Very useful if you don't want to bother
+with thinking about class names. */
+
+.c1>div:nth-child(1) {
+  background-color: red;
+}
+
+.c2>div:nth-child(2) {
+  background-color: yellow;
+}
+
+.header-brand {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem;
+  width: 100%;
+}
+
+.header-nav>ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  font-size: 2rem;
+}
+
+/*
+- Add a padding to all container divs
+- Add margins between all container divs
+- Add margin top/bottom to the button  (use shorthand)
+- Add (different) borders to all containers. (note: all containers have two classes, use that)
+- Use relative positioning to displace the 3 <div> in the c1 container. Check out the :nth-child() selector, I recommend using it
+but it's okay if you don't want to bother.
+- Use absolute positioning to displace the 3 <div> in the c2 container, relative to the ENTIRE document
+- Use absolute positioning to to displace the 2 <div> in the c3 container, relative to the PARENT div
+- Use sticky positioning on the button
+- Make the header sit fixed at the top when scrolling
+*/
+
+
+.container {
+  padding: 1%;
+  margin: 1%;
+}
+
+.btn {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.c1 {
+  border: 1px solid var(--color-danger);
+}
+
+.c2 {
+  /* border: 2px solid var(--color-accent); */
+}
+
+.c3 {
+  /* border: 1px solid var(--color-black); */
+}
+
+.c4 {
+  border: 1px solid var(--color-primary);
+}
+.c1>div:nth-child(1) {
+  position: relative;
+  top: 50px;
+}
+
+.c1>div:nth-child(2) {
+  position: relative;
+  top: 60px;
+  left: 970px;
+  z-index: 1;
+}
+
+.c1>div:nth-child(3) {
+  position: relative;
+  top: 60px;
+  left: 970px;
+  z-index: 1;
+}
+
+.c2>div:nth-child(1) {
+  position: absolute;
+  top: 90px;
+  left: 1000px;
+}
+
+.c2>div:nth-child(2) {
+  position: absolute;
+  top: 200px;
+  bottom: 20px;
+  left: 1000px;
+  border: 3px solid var(--color-black);
+}
+
+.c2>div:nth-child(3) {
+  position: absolute;
+  top: 900px;
+  left: 1000px;
+}
+
+.c3>div:nth-child(1) {
+  position: absolute;
+  top: 1050px;
+  left: 1000px;
+  border: 2px solid var(--color-accent);
+}
+
+.c3>div:nth-child(2) {
+  position: absolute;
+  top: 1200px;
+  left: 1000px;
+  border: 2px solid var(--color-danger);
+}
+
+.c4{
+  position: absolute;
+  top: 600px;
+}
+
+.btn{
+  position: sticky;
+  left: 1010px;
+}
+
+.header{
+  position: fixed;
+  z-index: 2;
+  top: 0%;
+  padding: 20px;
+}

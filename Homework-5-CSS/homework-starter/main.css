@@ -1,0 +1,100 @@
+/* 
+1. Import two fonts from google fonts. One should be a display font, the other should be something readable
+    like a sans-serif font.
+
+2. All headings (h1-h6) should use the display font.
+
+3. Everything else should use the other, readable font.
+
+4. Set the main font-size of the html (root) element so it's 10px
+
+5. Use rem to define the font-size of all headings (h1-h6), and the font-size of paragraphs.
+
+6. Add a background color the word Blog in the header brand
+
+7. Add a background color to all paragraphs that have the class .card-content
+
+8. Add a color to all paragraphs, regardless of the class
+
+9. Add specific styling only to sections of with the class .top-card
+
+10. Add a background-color and font-size to the <span> within the footer
+
+11. Add other custom styles
+
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Major+Mono+Display&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+:root{
+    --color-silver: #95a5a6;
+    --color-blue: #3498db;
+    --color-white: #ecf0f1;
+}
+
+header{
+    background-color: var(--color-silver);
+    padding: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'BhuTuka Expanded One', cursive;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+h5 {
+    font-size: 2.2rem;
+}
+
+h6 {
+    font-size: 2rem;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2rem;
+}
+
+.card-content{
+    background-color: var(--color-blue);
+    padding: 1%;
+    color: var(--color-white);
+}
+
+.card.top-card{
+    color: var(--color-white);
+    background-color: #95a5a6;
+}
+
+footer span{
+    font-size: 2rem;
+    color: var(--color-blue);
+}
